@@ -1,0 +1,34 @@
+*Alunos :
+nome-VARCHAR 
+data_de_nascimento-DATE/TIME
+rg-VARCHAR
+telefone-VARCHAR
+Responsável-VARCHAR
+
+*Cursos :
+ID_cursos-auto
+Nome_Curso-varchar
+Data_início-date/time
+Data_fim-date/time
+Grade_curso-varchar
+Período-date/time
+
+*Funcionários :
+ID_funcionários-auto
+nome-varchar 
+data_contrato-date/time
+cpf-varchar 
+telefone-varchar 
+setor-varchar
+salário-money
+situação-varchar
+
+*Salas :
+ID_Salas-auto
+Nome-varchar
+Local-varchar
+Situação-varchar
+Cursos -varchar
+Data_agendamento-data/time
+
+
