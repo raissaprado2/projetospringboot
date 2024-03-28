@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.webapp.escola_xyz_b.Model.Administrador;
 import com.webapp.escola_xyz_b.Repository.AdministradorRepository;
 import com.webapp.escola_xyz_b.Repository.VerificaCadastroAdmRepository;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 
 @Controller
@@ -27,9 +29,16 @@ public class AdministradorController {
         }else{
             System.out.println("Falha ao Cadastrar");
         }
-        
+
         return "/login/login-adm";
     }
+    @PostMapping("acesso-adm")
+    public String postMethodName(@RequestBody String entity) {
+        //metodo para verificar acesso 
+        
+        return entity;
+    }
+    
     
 
 }
